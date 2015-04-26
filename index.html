@@ -1,0 +1,29 @@
+<form method="get" id="myForm">
+    <fieldset>
+        <ul>
+            <li>
+                <label id="f_name" for="name">First Name:</label>
+                <input type="text" name="First_Name" class="tip" id="firstname" autofocus required /> <span id="fir_result" class="tip-content"></span>
+
+            </li>
+            <li>
+                <label for="lastname">Last name:</label>
+                <input type="text" name="Last_Name" id="lastname" />
+            </li>
+            <li>
+                <label for="username">User name:</label>
+                <input type="text" name="User_Name" id="username" />
+            </li>
+            <li>
+                <label id="Password" for="password">Password:</label>
+                <input type="text" name="Password" id="pwd" class="tip" /> <span class="field-tip">?
+    <span class="tip-content black" id="tooltip">the password must contain a minimum of one lower case character, one upper case character, and one digit or special character.</span>
+</span> <span id="display" class="tip-content"></span>
+
+            </li>
+        </ul>
+        <input type="button" class="myLink" value="Sign up" onclick="validate()" id="myBtn" />
+    </fieldset>
+</form>
+<br>
+<span id="sucess"></span>
