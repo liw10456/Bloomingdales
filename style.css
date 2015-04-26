@@ -1,0 +1,116 @@
+#myForm {
+    font-family:'Helvetica', 'Ariel';
+    max-width:310px;
+    background-color:grey;
+    border-radius: 15px;
+    border:1px black solid;
+    background: -webkit-linear-gradient(#ccc, white);
+    /*For Safari*/
+    background: -o-linear-gradient(#ccc, white);
+    /*For Opera */
+    background: -moz-linear-gradient(#ccc, white);
+    /*For Firefox */
+    background: linear-gradient(#ccc, white);
+    /* Standard syntax */
+    padding:10px;
+    -webkit-box-shadow: 3px 4px 5px 0px rgba(71, 71, 71, 1);
+    -moz-box-shadow: 3px 4px 5px 0px rgba(71, 71, 71, 1);
+    box-shadow: 3px 4px 5px 0px rgba(71, 71, 71, 1);
+}
+form fieldset > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+form fieldset {
+    border:0;
+}
+form fieldset > ul > li label {
+    width: 6em;
+    display: inline-block;
+    text-align:right;
+    margin-right:5%;
+}
+.myLink {
+    cursor: pointer;
+    color:white;
+    background-color:#009900;
+    padding:6px;
+    float:right;
+    margin-right:20%;
+    font-size:12px;
+    margin-top:8%;
+}
+ .field-tip {
+    position:relative;
+    color:blue;
+    text-decoration:underline;
+}
+.field-tip .tip-content {
+    font-size:14px;
+    position:absolute;
+    top:-35px;
+    width:250px;
+    margin-right:-280px;
+    padding:10px;
+    color:#fff;
+    border:1px black solid;
+    background: -webkit-linear-gradient(black, #656565);
+    /*For Safari*/
+    background: -o-linear-gradient(black, #656565);
+    /*For Opera */
+    background: -moz-linear-gradient(black, #656565);
+    /*For Firefox */
+    background: linear-gradient(black, #656565);
+    /* Standard syntax */
+    opacity:0;
+    -webkit-transition:opacity 250ms ease-out;
+    -moz-transition:opacity 250ms ease-out;
+    -ms-transition:opacity 250ms ease-out;
+    -o-transition:opacity 250ms ease-out;
+    transition:opacity 250ms ease-out;
+}
+.field-tip:hover .tip-content {
+    opacity:1;
+}
+input[type="text"], textarea {
+    margin: 0.5em 0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+#fir_result, #display {
+    position:absolute;
+    visibility:hidden;
+    background-color:red;
+    color:white;
+    padding:5px;
+    font-size:12px;
+    left:274px;
+    border:1px solid #ff1f1f;
+}
+.tip-content {
+    background: #eee;
+    border: 1px solid #ccc;
+    position: relative;
+}
+.tip-content:before {
+    position: absolute;
+    display: inline-block;
+    border-top: 5px solid transparent;
+    border-right: 9px solid red;
+    border-bottom: 5px solid transparent;
+    border-right-color: red;
+    left:-10px;
+    content:'';
+}
+.black:before {
+    border-right-color: black;
+    margin-top:30px;
+}
+.black {
+    margin-left:15px;
+}
+.redborder {
+    border: 1px solid red;
+}
